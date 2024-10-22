@@ -684,6 +684,10 @@ section {
   border-radius: 0px;
 }
 
+.services .icon h4 {
+  color: #e43c5c;
+}
+
 /* .services .icon :hover {
   cursor: pointer;
 } */
@@ -723,206 +727,60 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
-.pricing .box {
+.subscription-table {
+  margin: 30px auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+.table-title {
+  text-align: left;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  background-color: #e43c5c;
+  font-weight: bold;
   padding: 20px;
-  background: #f9f9f9;
-  text-align: center;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #f9f9f9;
 }
-
-.pricing .box h3 {
-  font-weight: 400;
-  padding: 15px;
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #493c3e;
-}
-
-.pricing .box h4 {
-  font-size: 42px;
-  color: #e43c5c;
-  font-weight: 500;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-}
-
-.pricing .box h4 sup {
-  font-size: 20px;
-  top: -15px;
-  left: -3px;
-}
-
-.pricing .box h4 span {
-  color: #000;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.pricing .box ul {
-  padding: 0;
-  list-style: none;
-  color: #493c3e;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
-}
-
-.pricing .box ul li {
-  padding-bottom: 16px;
-}
-
-.pricing .box ul i {
-  color: #e43c5c;
-  font-size: 18px;
-  padding-right: 4px;
-}
-
-.pricing .box ul .na {
-  color: #ccc;
-  text-decoration: line-through;
-}
-
-.pricing .box .btn-wrap {
-  padding: 15px;
+.table th, .table td {
+  vertical-align: middle;
   text-align: center;
 }
-
-.pricing .box .btn-buy {
-  display: inline-block;
-  padding: 8px 40px 10px 40px;
-  border-radius: 50px;
-  border: 2px solid #e43c5c;
-  color: #e43c5c;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  transition: 0.3s;
+.table th {
+  background-color: #e43c5c;
 }
-
-.pricing .box .btn-buy:hover {
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+}
+.price-details {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+.btn-sales {
+  font-size: 0.9rem;
   background: #e43c5c;
+  border: 0;
+  padding: 10px 28px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+.btn-sales:hover {
+  background: #d01d3f;
   color: #fff;
 }
-
-.pricing .recommended {
-  border-color: #e43c5c;
+.table thead th {
+  color: white;
 }
-
-.pricing .recommended .btn-buy {
-  background: #e43c5c;
-  color: #fff;
+.icon {
+  font-size: 1.2rem;
+  /* color: red; */
 }
-
-.pricing .recommended .btn-buy:hover {
-  background: #d91e42;
-  border-color: #d91e42;
-}
-
-.pricing .recommended-badge {
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  font-size: 13px;
-  padding: 3px 25px 6px 25px;
-  background: #fce6ea;
-  color: #e43c5c;
-  border-radius: 50px;
-}
-
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team {
-  background: #fff;
-  padding: 60px 0;
-  border: #000;
-}
-
-.team .member {
-  margin-bottom: 20px;
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.team .member .member img {
-  position: relative;
-  overflow: hidden;
-}
-
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.85);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #493c3e;
-  margin: 0 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .member .social a i {
-  line-height: 0;
-}
-
-.team .member .social a:hover {
-  color: #e43c5c;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .member .member-info {
-  padding: 25px 15px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #493c3e;
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  /* color: #aaaaaa; */
-  color: #000;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.team .member:hover .social {
-  opacity: 1;
+.check {
+  font-size: 1.2rem;
+  /* color: #f00631; */
+  color: #d01d3f;  
 }
 
 /*--------------------------------------------------------------
